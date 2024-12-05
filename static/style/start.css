@@ -1,0 +1,84 @@
+:root{
+    --color-green:#0CCE6B;
+    --color-white:#FFFFFF;
+    --color-black:#363537;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-green); /* ou toute autre couleur que vous préférez */
+}
+#image{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 20%;
+}
+
+#intro_description {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: absolute;
+    bottom : 40%;
+    left: 30%;
+    right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#p {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 500px; /* ou la largeur de votre choix */
+    
+
+}
+
+button {
+    display: block;
+    background-color: var(--color-black); /* ou toute autre couleur de votre choix */
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+button:hover {
+    background-color: var(--color-black); /* Légèrement plus clair que la couleur du bouton */
+}
+
+#firstbutton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeux de memory</title>
+    <link href="../static/style/memory.css" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <header class="game_controls">
+            <p> Score: <span id="result"></span></p>
+            <p> Moves: <span id="moves"></span></p>
+            <p class="time"> Timer: <span id="timer"></span></p>
+        </header>
+        <button class="game_start">Start the game</button>
+        <button class="game_reset">Stop the game</button>
+        <main class="game_grid">
+        </main>
+    </div>
+    <script src="../static/script/memoryscript.js" charset="utf8"></script>
+    <script src="../static/script/lib/sweetalert2.all.min.js"></script>
+</body>
+</html>

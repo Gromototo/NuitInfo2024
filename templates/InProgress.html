@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: #0CCE6B;
+        color: #363537;
+      }
+
+      .slidecontainer {
+        justify-content: center;
+        margin: 10px;
+        width: 30%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #363537;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #363537;
+        cursor: pointer;
+      }
+
+      .car_diesel {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        margin-top: -50px;
+        margin-left: -50px;
+        transition: transform 0.6s;
+      }
+
+      .car_electric {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        margin-top: -50px;
+        margin-left: -50px;
+        transition: transform 0.6s;
+      }
+
+      .go_back {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #363537;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Kilomètres parcourus par kg de CO2</h1>
+      <p>Déplacez le curseur.</p>
+      <div style="text-align: center; display: flex; justify-content: center">
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="12300"
+            max="25000"
+            value="12300"
+            class="slider"
+            id="myRange"
+          />
+          <p><span id="demo"></span> kg de CO2 émis</p>
+        </div>
+      </div>
+    </div>
+    <div class="car_diesel">
+      <img src="../static/images/car.png" alt="Car Icon" width="100" height="100" />
+      <p>
+        <span id="car_diesel_distance" style="text-align: center"></span> km
+      </p>
+    </div>
+    <div class="car_electric">
+      <img
+        src="../static/images/electric-car.png"
+        alt="Car Icon"
+        width="100"
+        height="100"
+      />
+      <p>
+        <span id="car_electric_distance" style="text-align: center"></span> km
+      </p>
+    </div>
+
+    <button class="go_back" onclick=window.close()>
+      Bien joué ! Retour au jeu
+    </button>
+
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      var car_diesel_distance = document.getElementById("car_diesel_distance");
+      var car_electric_distance = document.getElementById(
+        "car_electric_distance"
+      );
+      var car_diesel = document.querySelector(".car_diesel");
+      var car_electric = document.querySelector(".car_electric");
+
+      window.onload = function () {
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        var car_diesel_distance = document.getElementById(
+          "car_diesel_distance"
+        );
+        var car_electric_distance = document.getElementById(
+          "car_electric_distance"
+        );
+        var car_diesel = document.querySelector(".car_diesel");
+        var car_electric = document.querySelector(".car_electric");
+
+        var value = slider.value;
+        output.innerHTML = value;
+        var diesel_distance = Math.trunc((value - 6700) / 0.241 / 100) * 100;
+        car_diesel_distance.innerHTML = diesel_distance;
+        var electric_distance = Math.trunc((value - 12300) / 0.053 / 100) * 100;
+        car_electric_distance.innerHTML = electric_distance;
+        car_diesel.style.left = 5 + (diesel_distance / 270000) * 100 + "%";
+        car_electric.style.left = 5 + (electric_distance / 270000) * 100 + "%";
+      };
+
+      slider.oninput = function () {
+        var value = this.value;
+        output.innerHTML = value;
+        var diesel_distance = Math.trunc((value - 6700) / 0.241 / 100) * 100;
+        car_diesel_distance.innerHTML = diesel_distance;
+        var electric_distance = Math.trunc((value - 12300) / 0.053 / 100) * 100;
+        car_electric_distance.innerHTML = electric_distance;
+        car_diesel.style.left = 5 + (diesel_distance / 270000) * 100 + "%";
+        car_electric.style.left = 5 + (electric_distance / 270000) * 100 + "%";
+        if (electric_distance > diesel_distance) {
+          var button = document.querySelector(".go_back");
+          button.style.visibility = "visible";
+        } else {
+          var button = document.querySelector(".go_back");
+          button.style.visibility = "hidden";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Quelle est la capitale de la France ?"
+    },
+    {
+      "id": 2,
+      "text": "Qui a peint la Joconde ?"
+    },
+    {
+      "id": 3,
+      "text": "Quel est le plus long fleuve du monde ?"
+    }
+  ]
+}

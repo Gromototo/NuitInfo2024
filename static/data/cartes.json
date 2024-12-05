@@ -1,0 +1,488 @@
+{
+  "cartes": [
+    {
+      "theme":"Catastrophes Climatiques",
+      "recto": {
+        "images": ["../static/pictures/pecheur.png"],
+        "description": "Nous voulons étendre notre domaine de pêche.",
+        "question": "Accorder une dérogation pour la pêche industrielle dans les aires marines protégées?",
+        "interlocuteur": "Un lobbyiste de la pêche industrielle"
+      },
+      "verso": {
+        "source": "bonpote.com",
+        "texte": "La surpêche touche un tiers des populations de poissons, les requins et les raies sont menacés à hauteur d'un tiers. En Europe, une chute alarmante de 90% des populations de grands poissons alerte sur l'urgence de la situation.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -10,
+        "jauge2": 20,
+        "jauge3": -5
+      },
+      "disagree": {
+        "jauge1": 10,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Catastrophes Climatiques",
+      "recto": {
+        "images": ["../static/pictures/ceo.png"],
+        "description": "Une chaîne de télévision répand l'information que les ouragans ne sont pas liés au changement climatique.",
+        "question": "Poursuivre la chaîne de télévision en justice pour fausse information?",
+        "interlocuteur": "Directeur de l'Arcom"
+      },
+      "verso": {
+        "jeu":"memory",
+        "source": "bonpote.com",
+        "texte": "Les experts s’accordent sur le fait que le réchauffement des eaux influe directement sur la violence de ces phénomènes météorologiques, qui puisent leur énergie des océans",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -5,
+        "jauge2": 10,
+        "jauge3": -5
+      },
+      "disagree": {
+        "jauge1": 0,
+        "jauge2": -5,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Diplomatie",
+      "recto": {
+        "images": ["../static/pictures/minister.png"],
+        "description": "Le président d'un pays allié affirme sur ses réseaux sociaux que le niveau des mers n'augmente pas.",
+        "question": "Réagir en menaçant de mettre fin aux partenariats?",
+        "interlocuteur": "Conseiller du Pôle Diplomatique"
+      },
+      "verso": {
+        "source": "lemonde.fr",
+        "texte": "Les experts s’accordent sur le fait que le réchauffement des eaux influe directement sur la violence de ces phénomènes météorologiques, qui puisent leur énergie des océans",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 5,
+        "jauge2": 0,
+        "jauge3": -10
+      },
+      "disagree": {
+        "jauge1": -5,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Catastrophes Climatiques",
+      "recto": {
+        "images": ["../static/pictures/ecological-advisor.png"],
+        "description": "Lancer une innitiative pour planter des milliers d'arbres pour la journée internationale des forêts ?",
+        "question": "Financer et communiquer sur l'initiative ?",
+        "interlocuteur": "Conseillere Écologique"
+      },
+      "verso": {
+        "source": "greenpeace.fr",
+        "texte": "Cette action n'aura aucun impact immédiat. Un arbre peut absorber jusqu’à 150 kg de CO2 par an. D’autant qu’un arbre planté aujourd’hui ne pourra absorber efficacement du CO2 qu’après 23 ans.La priorité n'est pas de replanter mais bien de mettre fin à la déforestation ! la deforestation représente 12% des émissions mondiales de gaz à effet de serre",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 5,
+        "jauge2": -10,
+        "jauge3": 5
+      },
+      "disagree": {
+        "jauge1": 0,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/ceo.png"],
+        "description": "L'industrie automobile propose de nombreux nouveaux véhicules électriques.",
+        "question": "Proposer des financements aux particuliers pour l'achat de voitures électriques?",
+        "interlocuteur": "Lobbyiste de l'Industrie Automobile"
+      },
+      "verso": {
+        "jeu":"InProgress",
+        "source": "quechoisir.org",
+        "texte": "Pour commencer, une voiture électrique n’est jamais « zéro carbone ». Sa production, et notamment celle de ses batteries, émet des gaz à effet de serre (à l’origine du réchauffement climatique). Avant même d’avoir roulé le moindre kilomètre, une voiture électrique a donc une « dette » carbone de 5 à 15 tonnes équivalent CO2, selon les modèles.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": 10,
+        "jauge3": 10
+      },
+      "disagree": {
+        "jauge1": -10,
+        "jauge2": -10,
+        "jauge3": -10
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/ecological-advisor.png"],
+        "description": "Malgré vos efforts pour encourager la consommation de produits 'verts', nous soulignons un risque de surutilisation, compromettant les objectifs environnementaux.",
+        "question": "Communiquer sur le sujet lors de votre prochain entretien avec la presse ?",
+        "interlocuteur": "Expert en Durabilité"
+      },
+      "verso": {
+        "source": "popsci.com",
+        "texte": "La fabrication, le transport, et l'élimination de ces produits, même s'ils sont écologiques, nécessite des ressources et produisent des émissions. Par exemple, les produits nécessitant des matériaux rares ou des processus de fabrication complexes peuvent avoir un impact écologique significatif malgré leurs attributs 'verts'.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 15,
+        "jauge2": 0,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": -15,
+        "jauge2": 20,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Catastrophes Climatiques",
+      "recto": {
+        "images": ["../static/pictures/ceo.png"],
+        "description": "Nous pouvons étendre le parc éolien actuel pour diversifier nos sources de production d'énergie.",
+        "question": "Agrandir le parc éolien Français pour augmenter la production d'énergie 'verte'. ",
+        "interlocuteur": "Directeur EDF"
+      },
+      "verso": {
+        "source": "gerbeaud.com",
+        "texte": "Leur installation dans des zones écologiquement sensibles peut perturber les habitats naturels.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -5,
+        "jauge2": -10,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 5,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Economie",
+      "recto": {
+        "images": ["../static/pictures/scientist.png"],
+        "description": "Mon laboratoire de recherche va bientôt résoudre le problème du réchauffement climatique à l'aide de la technologie.",
+        "question": "Lui faire confience et financer ses recherches ?",
+        "interlocuteur": "Scientifique"
+      },
+      "verso": {
+        "source": "telecom-paris-alumni.fr",
+        "texte": "L’idée que nous pourrions éviter les effets catastrophiques du dérèglement grâce à des découvertes technologiques bute sur un simple problème de calendrier : à supposer que de telles découvertes soient faites (postulat déjà optimiste), les phases de planification, construction, tests, mises en place aux échelles suffisantes prendrait des décennies. Nous ne disposons pas de ce temps. Croire l’inverse revient à nier l’ampleur du problème.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -10,
+        "jauge2": -10,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 10,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/ecolo-activist.png"],
+        "description": "Il faut arrêtet de manger de la viande !",
+        "question": "Rendre illégale la consommation de viande ?",
+        "interlocuteur": "Activiste Végétarienne"
+      },
+      "verso": {
+        "jeu":"pacman",
+        "source": "tv5monde.com",
+        "texte": "Il faut juste reduire sa consommation en viande car il faut 7 à 10 kilos de céréales pour produire un kilo de viande rouge",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": -20,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": -10,
+        "jauge2": 5,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/person.png"],
+        "description": "Les mesures de lutte contre le réchauffement climatique sont trop couteuses !",
+        "question": "Geler les investissement ?",
+        "interlocuteur": "Citoyen"
+      },
+      "verso": {
+        "source": "iadb.org",
+        "texte": "L'énergie renouvelable sera bientôt moins chère que le gaz naturel. Il est économiquement sensé pour les gouvernements d'investir dans des solutions d'énergie propre",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -5,
+        "jauge2": 0,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 10,
+        "jauge2": 10,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Diplomatie",
+      "recto": {
+        "images": ["../static/pictures/ecolo-activist.png"],
+        "description": "Lors d'un débat, votre opposant affirme que la législation internationale ne protège pas l'environnement en temps de guerre !",
+        "question": "Lui répondre que c'est tout à fait vrai et que vous souhaitez remédier à cela ?",
+        "interlocuteur": "Opposant Politique"
+      },
+      "verso": {
+        "source": "icrc.org",
+        "texte": "Le droit international humanitaire offre en réalité une protection à l'environnement contre les dommages à long terme et étendus causés par les conflits armés.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -5,
+        "jauge2": 0,
+        "jauge3": -5
+      },
+      "disagree": {
+        "jauge1": 5,
+        "jauge2": 0,
+        "jauge3": 5
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/minister.png"],
+        "description": "Interdire les voitures individuelles car le transport représente plus de 50% des émissions d’un français moyen !",
+        "question": "User de votre Véto ?",
+        "interlocuteur": "Proposition de loi"
+      },
+      "verso": {
+        "source": "hellocorabon.com",
+        "texte": "Le transport ne represente que ⅓ des émissions d'un citoyen français.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": -5,
+        "jauge3": -5
+      },
+      "disagree": {
+        "jauge1": -10,
+        "jauge2": 10,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/agricultor.png"],
+        "description": "Plutôt que d'interdire la viande il faut obliger à consommer localement !",
+        "question": "Rédiger un projet de loi.",
+        "interlocuteur": "Agriculteur"
+      },
+      "verso": {
+        "source": "slate.fr",
+        "texte": "l'importance du manger local est parfois surestimée, car le transport ne représente en réalité qu'une petite partie de l'énergie consommée dans la production des aliments en effet : le transport de nourriture représente en général moins de 10% de l'empreinte carbone de la nourriture",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": 10,
+        "jauge3": 10
+      },
+      "disagree": {
+        "jauge1": -10,
+        "jauge2": -10,
+        "jauge3": -10
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/person.png"],
+        "description": "Pour vous rendre à votre prochaine convention vous devez choisir entre le bateau et l'avion comme moyen de locomotion.",
+        "question": "Prendre l'avion ?.",
+        "interlocuteur": "Organisateur"
+      },
+      "verso": {
+        "source": "International Council on Clean Transportation",
+        "texte": "Les voyages en avion présentent une empreinte carbone moyenne d'environ 80 grammes de CO2 par passager et par kilomètre sur des vols de 2 000 km, tandis que les trajets en bateau génèrent une émission estimée à 250 grammes de CO2 par passager et par kilomètre",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 5,
+        "jauge2": 4,
+        "jauge3": 2
+      },
+      "disagree": {
+        "jauge1": -5,
+        "jauge2": 4,
+        "jauge3": 2
+      }
+    },
+    {
+      "theme":"Economie",
+      "recto": {
+        "images": ["../static/pictures/industrial.png"],
+        "description": "Nous demandons des aides de l'état pour subventionner notre entreprise de recyclage du verre à 100%.",
+        "question": "Investir dans le recyclage infini du verre ?",
+        "interlocuteur": "Industriel"
+      },
+      "verso": {
+        "source": "paprec.com",
+        "texte": "Contre toute attente, le pourcentage de Calcin (verre recyclé) représente 10 à 90% d’un nouvel élément en verre en fonction de la qualité et le type de ce dernier. Un ajout plus ou moins importants de matière premières (la Silice, la Chaux, la Magnésie).",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -2,
+        "jauge2": -2,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 2,
+        "jauge2": 2,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Enjeux Sociaux",
+      "recto": {
+        "images": ["../static/pictures/ceo.png"],
+        "description": "Il faut changer les habitudes des citoyens concernant l'utilisation de papier toilette.",
+        "question": "Tiwtter sur les habitudes d'hygiene intime à adopter ?",
+        "interlocuteur": "PDG d'une entreprise de toilettes japonaises"
+      },
+      "verso": {
+        "source": "www.hulmo.com",
+        "texte": "On sait qu’un français consomme en moyenne 6kg de PQ par an, ce qui représente 3 000 litres d’eau ! Un lavage à l’eau consomme 200L par an, l’impact est bien moindre",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": 10,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": -5,
+        "jauge2": -5,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Economie",
+      "recto": {
+        "images": ["../static/pictures/industrial.png"],
+        "description": "J'aimerais mettre en place un système de consigne sur mes produits vendus en grande surface pour les recycler par la suite.",
+        "question": "Répondre que le système de consigne n'est pas viable et Refuser ?",
+        "interlocuteur": "Industriel dans le secteur Alimentiare"
+      },
+      "verso": {
+        "source": "cec-zev.eu",
+        "texte": "En Allemagne, au moment de régler vos achats, vous payez une consigne sur la majorité des bouteilles, grands pots en verre (yaourt par exemple), presque toutes les canettes en aluminium, briques et boissons en bouteille plastique. Mais celle-ci peut ensuite être récupérée au moment de rendre l’emballage !",
+        "images": []
+      },
+      "agree": {
+        "jauge1": -2,
+        "jauge2": 5,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 2,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Economie",
+      "recto": {
+        "images": ["../static/pictures/ceo.png"],
+        "description": "Investir dans le biocarburant comme l'huile de palme ou les graisses animales qui vont permettre de péréniser l'aviation civile et de transport.",
+        "question": "Le biocarburant n'est pas la solution, Refuser.",
+        "interlocuteur": "Lobbyiste secteur de l'aviation"
+      },
+      "verso": {
+        "source": "lesechos.fr",
+        "texte": "Seuls 15 millions de litres fabriqués à partir d'huile de colza, d'huile de palme ou de graisses animales sortent des raffineries tous les ans, soit… moins de 0,1 % de la consommation de l'aviation mondiale",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 5,
+        "jauge2": 2,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": 2,
+        "jauge2": -10,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"Economie",
+      "recto": {
+        "images": ["../static/pictures/person.png"],
+        "description": "N'investissez pas dans les chauffe eau solaires, ça ne fonctionne pas dans le nord ni en hiver.",
+        "question": "Voulez-vous en achetez un ?",
+        "interlocuteur": "Quelqu'un"
+      },
+      "verso": {
+        "source": "librairie.ademe.fr",
+        "texte": "Il y a suffisamment de soleil en France (même au nord) pour envisager l'installation d'un chauffe-eau solaire. En période estivale, la totalité de la demande en eau chauffée pourrait même être couverte, ce qui permettrait d’éteindre complètement la chaudière.",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 10,
+        "jauge2": 10,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": -2,
+        "jauge2": 0,
+        "jauge3": 0
+      }
+    },
+    {
+      "theme":"",
+      "recto": {
+        "images": ["../static/pictures/person.png"],
+        "description": "",
+        "question": "Voulez vous Gagner ?",
+        "interlocuteur": "CodingZ"
+      },
+      "verso": {
+        "fin":"/",
+        "source": "",
+        "texte": "",
+        "images": []
+      },
+      "agree": {
+        "jauge1": 0,
+        "jauge2": 0,
+        "jauge3": 0
+      },
+      "disagree": {
+        "jauge1": -2000,
+        "jauge2": -20000,
+        "jauge3": -20000
+      }
+    }
+  ]
+}
