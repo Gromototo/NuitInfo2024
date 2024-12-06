@@ -3,13 +3,13 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/pacman")
-def pacman():
-    return render_template("pacman.html")
+@app.route("/credits")
+def credits():
+    return render_template("credits.html")
 
-@app.route("/memory")
-def memory():
-    return render_template("memory.html")
+@app.route("/game")
+def game():
+    return render_template("game.html")
 
 @app.route("/InProgress")
 def InProgress():
