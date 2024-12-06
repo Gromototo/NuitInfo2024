@@ -12,15 +12,15 @@ def game():
     return render_template("game.html")
 
 @app.route("/mareenoire")
-def InProgress():
+def mareenoire():
     return render_template("mareenoire.html")
 
 @app.route("/clicker")
-def InProgress():
+def clicker():
     return render_template("clicker.html")
 
 @app.route("/protege")
-def InProgress():
+def protege():
     return render_template("protege.html")
 
 @app.route("/")
