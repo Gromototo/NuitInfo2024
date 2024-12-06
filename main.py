@@ -19,6 +19,10 @@ def InProgress():
 def InProgress():
     return render_template("clicker.html")
 
+@app.route("/protege")
+def InProgress():
+    return render_template("protege.html")
+
 @app.route("/")
 def start():
     return render_template("index.html")
