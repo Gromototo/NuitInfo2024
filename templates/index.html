@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climat Master</title>
-    <link rel="stylesheet" href="../static/style/style.css">
-    <link rel="stylesheet" href="../static/style/carte.css">
-  </head>
-  <body>
-    <header id="header">
-      <h1>Climat Master</h1>
-    </header>
-    <main>
-      <section id="section-gauge">
-        <div id="faut-que-ca-marche">
-          <div class="progress-container1">
-            <svg class="progress-bar-1" width="24" height="100%">
-              <rect class="progress-background-1" width="100%" height="100%" fill="#fff"></rect>
-              <rect class="progress-fill-1" width="100%" height="0" y="100%" fill="grey"></rect>
-            </svg>
-            <div class="progress-text-1">0%</div>
-            <img src="../static/pictures/icon_planete.png" alt="arrow" style="width: 50px; height: 50px">
-            <button id="increaseButton1" style="display: none">+</button>
-          </div>
-          <div class="progress-container2">
-            <svg class="progress-bar-2" width="24" height="100%">
-              <rect class="progress-background-2" width="100%" height="100%" fill="#fff"></rect>
-              <rect class="progress-fill-2" width="100%" height="0" y="100%" fill="grey"></rect>
-            </svg>
-            <div class="progress-text-2">0%</div>
-            <img src="../static/pictures/icon_argent.png" alt="arrow" style="width: 50px; height: 50px">
-            <button id="increaseButton2" style="display: none">+</button>
-          </div>
-          <div class="progress-container3">
-            <svg class="progress-bar-3" width="24" height="100%">
-              <rect class="progress-background-3" width="100%" height="100%" fill="#fff"></rect>
-              <rect class="progress-fill-3" width="100%" height="0" y="100%" fill="grey"></rect>
-            </svg>
-            <div class="progress-text-3">0%</div>
-            <img src="../static/pictures/hand.png" alt="arrow" style="width: 50px; height: 50px">
-            <button id="increaseButton3" style="display: none">+</button>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OceanGate</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="wrapper" id="draggable">
+    <div class="background">
+      <img src="./img/World-map-vectors26.jpg" alt="A map of the world" />
+      
+      <!-- Buttons -->
+      <div class="buttons-container1">
+        <input type="button" class="main-button" id="game1" value="Niveau 1" onclick="revealPopup1()"/>
+      </div>
+      <div class="buttons-container2">
+        <input type="button" class="main-button  __none__" id="game2" value="Niveau 2" onclick="revealPopup2()"/>
+      </div>
+      <div class="buttons-container3">
+        <input type="button" class="main-button __none__" id="game3" value="Niveau 3" onclick="revealPopup3()"/>
+      </div>
 
-      </section>
-      <section id="section-card">
-        <div id="card-stack">
-
+      <!-- Popup -->
+      <div class="popup __none__" id="popup">
+        <div class="popup-content">
+          <embed id="gcontainer" type="text/html" src="" width="500" height="500">
+          <p>You have unlocked the next level!</p>
+          <button id="closePopup1" class=" __none__" onclick="closePop1()">Close</button>
+          <button id="closePopup2" class=" __none__" onclick="closePop2()">Close</button>
+          <button id="closePopup3" class="__none__" onclick="closePop3()">Close</button>
         </div>
-      </section>
-    </main>
-  <script type="module" src="../static/script/main.js"></script>
-  </body>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/map.js"></script> 
+  <script >
+    function revealPopup1(){
+      document.getElementById('closePopup1').classList.remove("__none__");
+      document.getElementById('gcontainer').src="game.html";
+      document.getElementById('popup').classList.remove("__none__");
+    }
+    function closePop1(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('game2').classList.remove("__none__");
+      document.getElementById('closePopup1').classList.add("__none__");
+    }
+    function revealPopup2(){
+      document.getElementById('closePopup2').classList.remove("__none__");
+      document.getElementById('gcontainer').src="../templates/memory.html";
+      document.getElementById('popup').classList.remove("__none__");
+    }
+    function closePop2(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('game3').classList.remove("__none__");
+      document.getElementById('closePopup2').classList.add("__none__");
+    }
+    function revealPopup3(){
+      document.getElementById('gcontainer').src="credits.html";
+      document.getElementById('popup').classList.remove("__none__");
+      document.getElementById('closePopup3').classList.remove("__none__");
+    }
+    function closePop3(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('closePopup3').classList.add("__none__");
+    }
+
+  </script> 
+</body>
 </html>
+
