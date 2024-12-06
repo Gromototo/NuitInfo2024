@@ -11,10 +11,9 @@ def credits():
 def game():
     return render_template("game.html")
 
-@app.route("/InProgress")
+@app.route("/mareenoire")
 def InProgress():
-    return render_template("InProgress.html")
-
+    return render_template("mareenoire.html")
 
 @app.route("/")
 def start():
