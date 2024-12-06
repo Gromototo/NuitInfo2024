@@ -1,147 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+  .wrapper {
+    position: relative;
+    touch-action: none; /* Prevent default scrolling when dragging */
+  }
 
-:root{
-    --color-green:#0CCE6B;
-    --color-white:#FFFFFF;
-    --color-black:#363537;
-    --color-grey:#D9D9D9;
-}
+  .background {
+    position: absolute;
+    cursor: move;
+  }
 
-*{
-    font-family: 'Poppins', sans-serif;
-}
+  .buttons-container1 {
+    position: absolute;
+    top: 100px; /* Adjust as needed */
+    left: 100px; /* Adjust as needed */
+  }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--color-black);
-    margin: 0;
-    padding: 0;
-}
+  .buttons-container2 {
+    position: absolute;
+    top: 1800px; /* Adjust as needed */
+    left: 2500px; /* Adjust as needed */
+  }
 
-body, html {
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-}
+  .buttons-container3 {
+    position: absolute;
+    top: 1500px; /* Adjust as needed */
+    left: 3500px; /* Adjust as needed */
+  }
 
-body{
-    background-color: var(--color-green);
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-black);
-    margin: 0;
-    padding: 0;
-}
+  .main-button {
+    margin: 5px;
+  }
 
-#header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0CCE6B;
-    color: #FFFFFF;
-    padding: 10px;
+  .__none__{
+    display: none;
+  }
+  
+
+  /* Pop up CSS */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .popup-content {
     text-align: center;
-    height: 7vh;
-}
-
-main {
-    display: flex;
-    height: calc(100vh);
-    background: #0CCE6B;
-}
-main section{
-    height: calc(100vh - 7vh);
-    overflow: hidden;
-}
-#section-gauge {
-    flex: 35%;
-}
-#faut-que-ca-marche{
-    display: flex;
-    justify-content: space-around;
-    height: calc(100vh - 30vh);
-}
-
-.progress-container {
-    text-align: center;
-    height: calc((100vh - 7vh) - 30vh);
-}
-
-.progress-bar {
-    border: 1px solid #ccc;
-}
-
-.progress-background {
-    fill: #fff;
-}
-
-.progress-fill {
-    fill: grey;
-    transition: height 0.3s ease, y 0.3s ease;
-}
-
-.progress-text {
-    margin-top: 8px;
-}
-
-#increaseButton {
-    margin-top: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4caf50;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-}
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #0056b3;
+  }
 
-#interlocuteur {
-    font-weight: bold;
-    font-size:1.3em;
-    text-align: center;
-}
-
-#interlocuteurimage{
-    border-radius: 10px;
-}
-
-.card-data-interlocutor-description {
-    display: flex;
-    flex-direction: column; /* Pour aligner verticalement le texte dans la colonne */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-}
-
-.card-data-interlocutor-description p {
-    margin: 0; /* Pour supprimer la marge par défaut du paragraphe */
-}
-
-
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    width: 60%; /* Utiliser toute la largeur disponible */
-    margin-top: 10px;
-}
-
-.side.back {
-    text-align: center; /* Pour centrer le texte horizontalement dans le conteneur */
-    margin-left: 10px;
-    margin-right: 10px;
-
-
-}
-
-.centered-text {
-    margin: 0; /* Pour supprimer la marge par défaut du paragraphe */
-}
-
-#linkjeu{
-
-    text-decoration: none; /* Supprimer la soulignement par défaut */
-    color: inherit; /* Utiliser la couleur du texte par défaut */
-    cursor: pointer; /* Ajouter un curseur pointer pour indiquer que le lien est cliquable */
-    /* Ajoutez d'autres styles spécifiques au besoin */
-}
+  
