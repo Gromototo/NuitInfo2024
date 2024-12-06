@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OceanGate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper" id="draggable">
+    <div class="background">
+      <img src="./img/World-map-vectors26.jpg" alt="A map of the world" />
+      
+      <!-- Buttons -->
+      <div class="buttons-container1">
+        <input type="button" class="main-button" id="game1" value="Niveau 1" onclick="revealPopup1()"/>
+      </div>
+      <div class="buttons-container2">
+        <input type="button" class="main-button  __none__" id="game2" value="Niveau 2" />
+      </div>
+      <div class="buttons-container3 __none__">
+        <input type="button" class="main-button" id="game3" value="Niveau 3" />
+      </div>
+
+      <!-- Popup -->
+      <div class="popup __none__" id="popup">
+        <div class="popup-content">
+          <embed id="gcontainer" type="text/html" src="" width="500" height="500">
+          <p>You have unlocked the next level!</p>
+          <button id="closePopup" onclick="closePop1()">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/map.js"></script> 
+  <script >
+    function revealPopup1(){
+      document.getElementById('gcontainer').src="game.html";
+      document.getElementById('popup').classList.remove("__none__");
+    }
+    function closePop1(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('closePopup').onclick="closePop2()";
+      document.getElementById('game2').classList.remove("__none__");
+    }
+
+  </script> 
+</body>
+</html>
+

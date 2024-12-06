@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Puzzle Game</title>
+  <style>
+    canvas {
+      border: 2px solid black;
+      display: block;
+      margin: auto;
+    }
+    .description {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Couches océaniques → couches cutanées </h1>
+  <p>Remettez les couches dans l'ordre pour sauver un bout de l'océan</p>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <script src="game.js"></script>
+  <p id="layer0" class="description">
+    L’épiderme et la zone épipelagique servent de barrières protectrices et d’interfaces avec l'environnement extérieur.
+    Les deux permettent des échanges vitaux : absorption de la lumière pour la photosynthèse dans l'océan, et échanges gazeux (oxygène, dioxyde de carbone) pour la peau.
+  </p>
+  <p id="layer1" class="description">
+    Le derme et la zone mésopélagique jouent un rôle de régulation et de transmission.
+    Ils assurent un lien entre la surface (épiderme/zone épipelagique) et les couches plus profondes, en régulant les échanges de chaleur, d'énergie et de nutriments.
+    Ils participent à la perception : le derme détecte les stimuli externes, tandis que la zone mésopélagique perçoit et régule les mouvements verticaux des organismes.
+  </p>
+  <p id="layer2" class="description">
+    L'hypoderme et la zone bathypélagique ont des rôles protecteurs et isolants.
+    L'hypoderme protège les structures internes en amortissant les chocs, tandis que la zone bathypélagique protège les océans en stockant de la matière organique morte, jouant un rôle dans le cycle du carbone.
+    Tous deux représentent des réserves : l'hypoderme stocke l'énergie (graisse), tandis que la zone profonde de l'océan conserve l'énergie sous forme de matière organique sédimentée.
+  </p>
+  <p id="victory" class="description">Bravo! Vous avez réussi à reconstituer le puzzle!</p>
+  <p id="description" class="description">
+    Les couches cutanées et océaniques partagent des rôles complémentaires dans la protection,
+    la régulation des échanges et la transmission de ressources. 
+    Tout comme la peau est essentielle à la survie de l'organisme en régulant la température, 
+    la sensation et la protection, les différentes couches océaniques sont cruciales pour la 
+    santé de la planète, régulant le climat, la vie marine et le cycle des nutriments.
+  </p>
+</body>
+</html>

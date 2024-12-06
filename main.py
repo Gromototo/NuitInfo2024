@@ -21,7 +21,7 @@ def InProgress():
 
 @app.route("/")
 def start():
-    return render_template("start.html")
+    return {'time': App()}
 
 @app.route("/homepage")
 def homepage():
