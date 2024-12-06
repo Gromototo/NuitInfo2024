@@ -1,40 +1,46 @@
-# La Nuit De L'Info : Climate Master
+# La Nuit De L'Info : Ocean Gate
 
 ## Principe
 
-Dans ce jeu vous devrez prendre les bonnes décisions pour sauver la planète. On vous présentera des situations et vous devrez choisir la meilleure solution pour la planète. Chaque choix aura une influence sur l'état de la planète.
-
-Des explications seront données pour chaque choix et certains amèneront à des mini-jeux pour complémenter l'explication.
+Dans ce jeu vous devrez prendre compléter les différents niveaux pour en découvrir plus sur les océans et leurs liens avec le corps humain. Chaque Niveau apparaitera sur la map après avoir complèté le précédent.
 
 ## Les mini jeux
 
-### Le memory
+### Le Niveau 1 - La peau de l'océan
 
-Le jeu du memory est un jeu de mémoire où le joueur doit retrouver les 6 paires de cartes. Chaque paire est constitué de deux images différentes mais possédant une vignette de la meme couleur. Chaque paire représente une cause et une consséquence qui seront expliqués dès que la paire de carte sera dévoilée.
+Le but est de remettre chaque couche de la peau et de l'océan dans le bonne ordre.
 
-A chaque tour le joueur doit retourner 2 cartes en ayant pour objectif de retourner une paire de cartes liées. Si les deux cartes retournées ne sont pas liées, elles se retournent automatiquement au bout de 2 secondes. Si les deux cartes retournées sont liées, elles restent retournées et le joueur peut continuer à jouer.
+### Le Niveau 2 - Ocean Clicker
 
-Le joueur gagne lorsqu'il a retourné toutes les paires de cartes.
+#### But du jeu :
+Aidez à nettoyer l'océan en collectant des "déchets plastiques" en cliquant sur un bouton. Le but est d'atteindre 2000 déchets plastiques en 1 minute, tout en améliorant vos capacités grâce à des achats.
 
-### Le pacman
+#### Règles :
 
-Le jeu du pacman consiste à souligner l'importance de consommer de la viande de manière modérée. Comme dans la vraie vie, le pacman ne peut consomme de viande rouge (les vaches) que de manière exceptionnelle (pouvoir spécial temporaire).
+    Chaque clic rapporte un "déchet plastique" enlevé.
+    Vous pouvez acheter des bénévoles pour récolter automatiquement des déchet plastique toutes les secondes. Le prix des bénévoles augmente à chaque achat.
+    Vous pouvez aussi acheter des bateaux 0 émission, qui collectent un nombres important de déchets plastique toutes les 5 secondes. Le prix du bateau commence à 300 clics et augmente avec chaque achat.
+    Atteignez 2000 déchets plastiques pour gagner le jeu.
+    Les aides (bénévoles, bateau) deviennent plus efficace à chaque achat d'une aide identique.
 
-De manière normale il mange des légumes (ici des carottes) et il peut manger de temps en temps de la viande blanche (les cuisses de poulet). L'état spécial permet de manger de la viande rouge (des vaches) pendant un temps limité.
+### Le Niveau 3 - Marée Noir
 
-### La simulation des émissions des voitures
+Une marée noire vient de se produire !
+Vous êtes envoyé en mission pour sauver les 7 poissons bloqués dans la marée noire !
+On compte sur vous !
+Attention : des monstres marins sont présents !
+Utilisez les flèches de votre clavier pour vous déplacer.
+Bonne chance, et sauvez ces poissons !
 
-Un slider modifie la quantité de CO2 émise par une voiture que ca soit sur la construction ou sur l'utilisation.
+### Le Niveau 4 - Protéger les Coraux
 
-A partir de cette valeur, on calcule la distance que la voiture parcours pour émettre autant de CO2. On fait ça à la fois pour une voiture thermique et pour une voiture électrique.
+#### But du jeu :
 
-L'objectif est de remarquer le point d'inflexion où la voiture électrique devient plus intéressante que la voiture thermique.
+Protéger les coraux des dangers (vagues chaudes, pollution, déchets marins) qui tombent du haut de l'écran. Votre objectif est de survivre pendant 1 minute sans que la santé des coraux atteigne 0%.
 
-Les calculs se bases sur les données suivantes (https://www.transportenvironment.org/discover/how-clean-are-electric-cars/):
+#### Règles :
 
- - **voiture thermique** : 
-   - *0,241 kg* de CO2 par km
-   - *6700 kg* de CO2 pour la construction
- - **voiture électrique** :
-   - *0,053 kg* de CO2 par km
-   - *12300 kg* de CO2 pour la construction
+Cliquez sur les dangers qui tombent pour les éliminer avant qu'ils n'atteignent les coraux.
+Chaque danger non éliminé réduit la santé des coraux de 10%.
+La difficulté augmente avec le temps : les dangers tombent plus vite.
+Si la santé des coraux atteint 0%, vous perdez la partie.
