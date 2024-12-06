@@ -15,6 +15,10 @@ def game():
 def InProgress():
     return render_template("mareenoire.html")
 
+@app.route("/clicker")
+def InProgress():
+    return render_template("clicker.html")
+
 @app.route("/")
 def start():
     return render_template("index.html")

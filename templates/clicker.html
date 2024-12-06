@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Clicker</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+    h1, h2, h3 {
+      color: #0066cc;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 1.2em;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #click-button {
+      background-color: #1e90ff;
+    }
+    #benevole-button {
+      background-color: #ff8c00;
+    }
+    #bateau-button {
+      background-color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ocean Clicker</h1>
+  <button id="click-button">🌊🗑️ Enlever des déchets plastiques</button>
+  <h2>Déchets plastiques enlevés: <span id="dechets">0</span> / 2000</h2>
+  <button id="benevole-button" disabled>👩‍🦱👨‍🦱 Acheter un bénévole (Prix: <span id="prix-benevole">10</span>)</button>
+  <h3>Bénévoles: <span id="benevoles">0</span></h3>
+  <button id="bateau-button" disabled>🚤 Acheter un bateau zéro émissions (Prix: <span id="prix-bateau">500</span>)</button>
+  <h3>Bateaux zéro émissions: <span id="bateaux">0</span></h3>
+  <h3>Objectif: 2000 déchets plastiques à enlever</h3>
+</body>
+<script src="../static/script/clicker.js"></script>
+</html>
+
+<div id="victoire-message" style="display: none; text-align: center; margin-top: 20px; padding: 20px; border: 2px solid green; background-color: #e0f7e9; color: #2e7d32; font-size: 1.2em; font-weight: bold; border-radius: 10px;">
+    Félicitations ! Vous avez nettoyé 2000 déchets plastiques de l'océan. Merci pour votre contribution !
+</div>
+
+<style>
+    #victoire-message {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        border: 2px solid green;
+        background-color: #e0f7e9;
+        color: #2e7d32;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 10px;
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
