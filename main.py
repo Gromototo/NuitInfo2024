@@ -3,9 +3,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
-
-
 @app.route("/pacman")
 def pacman():
     return render_template("pacman.html")
@@ -21,7 +18,7 @@ def InProgress():
 
 @app.route("/")
 def start():
-    return {'time': App()}
+    return render_template("index.html")
 
 @app.route("/homepage")
 def homepage():
