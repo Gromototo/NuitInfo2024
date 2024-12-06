@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page de Crédits</title>
+  <title>Crédits</title>
   <style>
     /* Body and background setup */
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #0d1b2a, #1b263b, #415a77);
+      background: linear-gradient(to top, #001a33, #003366, #004080);
       color: white;
       font-family: 'Montserrat', sans-serif;
       overflow: hidden; /* Hide scrollbars for the effect */
@@ -54,16 +54,16 @@
     h1 {
      font-size: 4rem;
       margin-bottom: 30px;
-      color: #FF5733; /* Orange vif */
-      text-shadow: 0 0 15px rgba(255, 87, 51, 0.6);
+      color: #4dbedf;
+      text-shadow: 0 0 15px rgba(166, 222, 239, 0.6);
       letter-spacing: 2px;
     }
 
     h2 {
       font-size: 2.5rem;
       margin-bottom: 15px;
-      color: #f4d03f;
-      text-shadow: 0 0 10px rgba(244, 208, 63, 0.6);
+      color: #2694ab;
+      text-shadow: 0 0 10px rgba(189, 222, 229, 0.6);
     }
 
     p {
@@ -73,98 +73,35 @@
     }
 
     .highlight {
-      color: #f4d03f; /* Highlighted text */
+      color: #e59572; /* Highlighted text */
       font-weight: bold;
-      text-shadow: 0 0 5px rgba(244, 208, 63, 0.8);
+      text-shadow: 0 0 5px rgba(244, 212, 198, 0.7);
     }
 
     a {
-      color: #00BFFF; /* Bleu lumineux pour les liens */
+      color: #fdc4b6;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #ff5733; /* Changer de couleur au survol */
+      color: #ea7070; /* Changer de couleur au survol */
       text-decoration: underline;
     }
 
-    /* Footer for restart button */
-    .credits-footer {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
+    b {
+        color: #e9ab91; /* Highlighted text */
+      text-shadow: 0 0 5px rgba(244, 212, 198, 0.7);
     }
 
-button {
-  background: linear-gradient(145deg, #f4d03f, #ffb84d);
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.5rem;
-  border-radius: 100px;
-  cursor: pointer;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  animation: colorBlink 1.5s infinite alternate; /* Ajout de l'animation de clignotement */
-}
-
-/* Animation de clignotement multicolore */
-@keyframes colorBlink {
-  0% {
-    background-color: #ff5733; /* Rouge */
-    box-shadow: 0px 0px 100px rgba(255, 87, 51, 0.8);
-  }
-  25% {
-    background-color: #33cc33; /* Vert */
-    box-shadow: 0px 0px 50px rgba(51, 204, 51, 0.8);
-  }
-  50% {
-    background-color: #3399ff; /* Bleu */
-    box-shadow: 0px 0px 100px rgba(51, 153, 255, 0.8);
-  }
-  75% {
-    background-color: #ffcc00; /* Jaune */
-    box-shadow: 0px 0px 50px rgba(255, 204, 0, 0.8);
-  }
-  100% {
-    background-color: #ff00ff; /* Magenta */
-    box-shadow: 0px 0px 100px rgba(255, 0, 255, 0.8);
-  }
-}
-
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-  background-color: #ff5733; /* Changer la couleur au survol */
-}
 
         /* Style pour la section des crédits */
     .credit-section {
       padding: 10px;
       margin-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-    }
-
-    /* Animation du fond dynamique */
-    .bg-animated {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: radial-gradient(circle, rgba(0,0,0,0.7), rgba(0,0,0,0.8));
-      z-index: -1;
-      animation: bgAnimate 8s linear infinite;
-    }
-
-    @keyframes bgAnimate {
-      0% { background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)); }
-      50% { background: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); }
-      100% { background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)); }
+      background-color: rgba(19, 74, 85, 0.5);
+      border-radius: 60px;
     }
 
     /* Style pour le bouton de redémarrage */
@@ -184,57 +121,43 @@ button:hover {
 <body>
 
 <div class="credits-container">
-  <div class="bg-animated"></div> <!-- Animation de fond -->
   <div class="credits-text">
     <h1>Crédits</h1>
     <div class="credit-section">
-    <h2>Développeurs</h2>
-    <p><a href="https://github.com/ines-hafraoui" target="_blank" class="highlight">Ines Hafraoui</a></p>
-    <p><a href="https://github.com/YohanChePi" target="_blank" class="highlight">Yohan Chevrier-Pivot</a></p>
-    <p><a href="https://github.com/gwt734" target="_blank" class="highlight">Gwendal Trehin</a></p>
+    <h2>Développement</h2>
+    <p><a href="https://github.com/ines-hafraoui" target="_blank" class="highlight">Ines Hafraoui</a><b> - page principale</b></p>
+    <p><a href="https://github.com/YohanChePi" target="_blank" class="highlight">Yohan Chevrier-Pivot</a><b> - jeu 1 & crédits</b></p>
+    <p><a href="https://github.com/gwt734" target="_blank" class="highlight">Gwendal Trehin</a><b> - pop-up integration</b></p>
+    <p><a href="https://github.com/JulianMaz" target="_blank" class="highlight">Julian Mazerat</a><b> - jeu 2 & jeu 4</b></p>
+    <p><a href="https://github.com/NathanaeleZ" target="_blank" class="highlight">Nathanaël Chauvin</a><b> - jeu 3</b></p>
+
     <br>
     </div>
     <div class="credit-section">
     <h2>Back et Hebergement</h2>
     <p><a href="https://github.com/Gromototo" target="_blank" class="highlight">Rodrigue Leitao-Peirerra</a></p>
-    <br>
-    </div>
-    <div class="credit-section">
-    <h2>Equipe happiness management</h2>
-    <p><a href="https://github.com/NathanaeleZ" target="_blank" class="highlight">Nathanaël Chauvin</a></p>
-    <p><a href="https://github.com/JulianMaz" target="_blank" class="highlight">Julian Mazerat</a></p>
     <p><a href="https://github.com/gwt734" target="_blank" class="highlight">Gwendal Trehin</a></p>
-    <p><a href="https://github.com/yannlet1108" target="_blank" class="highlight">Yann Letourneur</a></p>
+
     <br>
     </div>
     <div class="credit-section">
-    <h2>Merci pour votre soutien !</h2>
+    <h2>Animation & Divertissement</h2>
+    <p><a href="https://github.com/yannlet1108" target="_blank" class="highlight">Yann Letourneur</a><b> - DJ</b></p>
+    <p><a href="https://github.com/ines-hafraoui" target="_blank" class="highlight">Ines Hafraoui</a><b> - Prof de Hip-Hop</b></p>
+    <p><a href="https://github.com/NathanaeleZ" target="_blank" class="highlight">Nathanaël Chauvin</a><b> - Responsable tier-list</b></p>
+    <p><a href="https://github.com/gwt734" target="_blank" class="highlight">Gwendal Trehin</a><b> - Responsable babyfoot</b></p>
+    <p><a href="https://github.com/YohanChePi" target="_blank" class="highlight">Yohan Chevrier-Pivot</a><b> - Responsable logistique</b></p>
+    <br>
+    </div>
+    <div class="credit-section">
+    <h2>Pensez aux océans !</h2>
     <p><span class="highlight">Toute l'équipe ❤️</span></p>
     </div>
   </div>
 </div>
 
-<div class="credits-footer">
-  <button onclick="restartAnimation()">Lancer le spectacle</button>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
-  // Function to restart the animation
-  function restartAnimation() {
-    const creditsText = document.querySelector('.credits-text');
-    creditsText.style.animation = 'none'; // Reset animation
-    creditsText.offsetHeight; // Trigger reflow
-    creditsText.style.animation = null; // Restart animation
-    launchConfetti(); // Trigger confetti on restart
-    launchFireworks(); // Trigger fireworks on restart
-
-      // Optionally reset the animation of the button (for example, remove and re-add animation)
-  const button = document.querySelector('button');
-  button.style.animation = 'none'; // Stop the clignotement
-  button.offsetHeight; // Trigger reflow to reset
-  button.style.animation = 'colorBlink 1.5s infinite alternate'; // Restart the clignotement animation
-  }
 
   // Function to launch confetti
   function launchConfetti() {
@@ -272,10 +195,10 @@ button:hover {
     return Math.random() * (max - min) + min;
   }
 
-  // Automatically launch fireworks every 10 seconds
+  // Automatically launch fireworks every 1 second
   setInterval(launchFireworks, 1000);
 
-  // Automatically launch confetti every 5 seconds
+  // Automatically launch confetti every 1 second
   setInterval(launchConfetti, 1000);
 </script>
 
