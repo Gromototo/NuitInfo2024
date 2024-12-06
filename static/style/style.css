@@ -10,19 +10,31 @@
 
   .buttons-container1 {
     position: absolute;
-    top: 100px; /* Adjust as needed */
-    left: 100px; /* Adjust as needed */
+    top: 600px; /* Adjust as needed */
+    left: 1500px; /* Adjust as needed */
   }
 
   .buttons-container2 {
     position: absolute;
-    top: 1800px; /* Adjust as needed */
-    left: 2500px; /* Adjust as needed */
+    top: 1500px; /* Adjust as needed */
+    left: 3500px; /* Adjust as needed */
   }
 
   .buttons-container3 {
     position: absolute;
     top: 1500px; /* Adjust as needed */
+    left: 2200px; /* Adjust as needed */
+  }
+
+  .buttons-container4 {
+    position: absolute;
+    top: 1500px; /* Adjust as needed */
+    left: 3000px; /* Adjust as needed */
+  }
+
+  .buttons-container5 {
+    position: absolute;
+    top: 500px; /* Adjust as needed */
     left: 3500px; /* Adjust as needed */
   }
 
@@ -63,6 +75,31 @@
   
   .popup button:hover {
     background-color: #0056b3;
+  }
+
+  .main-button {
+    background: linear-gradient(45deg, #ff0000, #ff7f50);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%; /* Makes the button round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .main-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-button:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   

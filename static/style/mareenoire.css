@@ -1,0 +1,192 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Empêche le défilement */
+    background: url('https://www.gamewallpapers.com/wallpapers_slechte_compressie/wallpaper_under_the_waves_01_1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ajuste l'image pour remplir l'écran */
+  }
+  
+  /* Zone de jeu */
+  #game-area {
+    position: relative;
+    width: 100vw; /* Fixe la largeur à la taille de l'écran */
+    height: 100vh; /* Fixe la hauteur à la taille de l'écran */
+    overflow: hidden; /* Empêche tout dépassement des éléments */
+    background: transparent; /* Assure que le fond du jeu est transparent */
+  }
+  
+  
+  /* Cercle transparent */
+  #circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.772); /* Simule la transparence autour */
+    background: transparent; /* Fond du cercle transparent */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+  
+  
+  /* Plongeur */
+  #player {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+    z-index: 10; /* Devant le cercle */
+  }
+  
+  /* Cercle noirci au-dessus */
+  #dark-overlay {
+    position: absolute;
+    width: 200px; /* Légèrement plus grand que le plongeur */
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5); /* Noir semi-transparent */
+    top: calc(50% ); /* Ajuste pour compenser la taille supplémentaire */
+    left: calc(50% ); /* Même ajustement horizontal */
+    transform: translate(-50%, -50%);
+    z-index: 15; /* Au-dessus du plongeur */
+    pointer-events: none; /* Empêche toute interaction */
+}
+
+  
+  #monster {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #monster2 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson1 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson2 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson3 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 79%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson4 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson5 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson6 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+
+  #poisson7 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Devant le cercle */
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 20;
+  }
+  
+  #intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100; /* Au-dessus de tout */
+  }
+  
+  #scrolling-text {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    animation: scrollUp 30s linear forwards;
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: -100%;
+    }
+  }

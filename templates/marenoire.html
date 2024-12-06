@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marée Noire</title>
+  <link rel="stylesheet" href="../static/style/mareenoire.css">
+</head>
+<body>
+    <div id="intro-screen">
+        <div id="scrolling-text">
+          <p>Une marée noire vient de se produire !</p>
+          <p>Vous êtes envoyé en mission pour sauver les 7 poissons bloqués dans la marée noire !</p>
+          <p>On compte sur vous !</p>
+          <p>Attention : des monstres marins sont présents !</p>
+          <p>Utilisez les flèches de votre clavier pour vous déplacer.</p>
+          <p>Bonne chance, et sauvez ces poissons !</p>
+        </div>
+      </div>      
+  <div id="game-area">
+    <div id="dark-overlay"></div> 
+    <div id="circle">
+      <img id="player" src="../static/images/diver.png" alt="Diver" />
+    </div>
+  </div>
+  <img id="monster" src="../static/images/monster.png" alt="Monster" />
+  <img id="monster2" src="../static/images/monster.png" alt="Monster" />
+  <img id="poisson1" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson2" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson3" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson4" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson5" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson6" src="../static/images/fish.png" alt="Fish" />
+  <img id="poisson7" src="../static/images/fish.png" alt="Fish" />
+  <audio id="background-music" src="../static/images/music.mp3" loop autoplay></audio>
+  <div id="score">Score: 0/7</div>
+  <script src="../static/script/script.js"></script>
+</body>
+</html>

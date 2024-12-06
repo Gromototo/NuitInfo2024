@@ -21,6 +21,12 @@
       <div class="buttons-container3">
         <input type="button" class="main-button __none__" id="game3" value="Niveau 3" onclick="revealPopup3()"/>
       </div>
+      <div class="buttons-container4">
+        <input type="button" class="main-button __none__" id="game4" value="Niveau 4" onclick="revealPopup3()"/>
+      </div>
+      <div class="buttons-container5">
+        <input type="button" class="main-button __none__" id="game5" value="Niveau 5" onclick="revealPopup3()"/>
+      </div>
 
       <!-- Popup -->
       <div class="popup __none__" id="popup">
@@ -30,6 +36,8 @@
           <button id="closePopup1" class=" __none__" onclick="closePop1()">Close</button>
           <button id="closePopup2" class=" __none__" onclick="closePop2()">Close</button>
           <button id="closePopup3" class="__none__" onclick="closePop3()">Close</button>
+          <button id="closePopup4" class="__none__" onclick="closePop3()">Close</button>
+          <button id="closePopup5" class="__none__" onclick="closePop3()">Close</button>
         </div>
       </div>
 
@@ -60,14 +68,35 @@
       document.getElementById('closePopup2').classList.add("__none__");
     }
     function revealPopup3(){
-      document.getElementById('gcontainer').src="credits";
-      document.getElementById('popup').classList.remove("__none__");
       document.getElementById('closePopup3').classList.remove("__none__");
+      document.getElementById('gcontainer').src="mareenoire";
+      document.getElementById('popup').classList.remove("__none__");
     }
     function closePop3(){
       document.getElementById('popup').classList.add("__none__");
+      document.getElementById('game4').classList.remove("__none__");
       document.getElementById('closePopup3').classList.add("__none__");
     }
+    function revealPopup4(){
+      document.getElementById('closePopup4').classList.remove("__none__");
+      document.getElementById('gcontainer').src="credits";
+      document.getElementById('popup').classList.remove("__none__");
+    }
+    function closePop4(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('game5').classList.remove("__none__");
+      document.getElementById('closePopup4').classList.add("__none__");
+    }
+    function revealPopup5(){
+      document.getElementById('closePopup5').classList.remove("__none__");
+      document.getElementById('gcontainer').src="credits";
+      document.getElementById('popup').classList.remove("__none__");
+    }
+    function closePop5(){
+      document.getElementById('popup').classList.add("__none__");
+      document.getElementById('closePopup5').classList.add("__none__");
+    }
+
 
   </script> 
 </body>
